@@ -4,7 +4,7 @@ from typing import List
 
 
 class ImageEmbedder:
-    def _init_(self):
+    def __init__(self):
         # CLIP model for image embeddings
         self.model = SentenceTransformer("clip-ViT-B-32")
 
