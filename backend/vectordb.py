@@ -4,7 +4,7 @@ from typing import List
 
 
 class VectorDB:
-    def _init_(self, persist_dir: str = "chroma_db"):
+    def __init__(self, persist_dir: str = "chroma_db"):
         self.client = chromadb.Client(
             Settings(
                 persist_directory=persist_dir,
